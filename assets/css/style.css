@@ -1,28 +1,31 @@
 
 /* Block model */
+/* global schablon - box-sizing */
+* {
+box-sizing: border-box;
+}
+
 
 body {
-text-align: right;
-}
+/* text-align: center; */
+margin: 0;
+} 
+
 
 p {
-    width: 200px;
-    height: 300px;
-    background-color: blanchedalmond;
+    width: 100%;
     border: 1px solid red;
     padding: 20px;
-    margin: 10px;
+    margin: 10px;   
     display: inline-block;
-    text-align: initial;
-    vertical-align: top;
-    
+    box-sizing: border-box;
 
-    /* display: inline (does not work, shifts all blocks together with overlapping*/
+} 
+        /* display: inline (does not work, shifts all blocks together with overlapping */
 
-}
 
-/* wighth, heights, padding do notwork for inline elements like a, solution - to use display inline-block*/
-a {
+/* wighth, heights, padding do notwork for inline elements like a, solution - to use display inline-block */
+/* a {
     width: 100px;
     height: 50px;
     border: 1px solid green;
@@ -31,18 +34,33 @@ a {
     text-align: center;
     
     display: inline-block;
-}
+} */
 
 /* display: inline-block: stand in line like inline elements and have size as block elements - hybrid elements */
 
 /* Example change from block to inline */
 
-a{
-    color: inherit;
-    text-decoration: none;
+ul {
+    text-align: center;
 }
 
 .nav-link-item {
-    display: inline
+    display: inline;
+    
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 15px 25px;
+    margin: 0 20px;
+    width: 100px;    
+    /* wigth for the text elements if required */
+    text-align: center;
+    color: rebeccapurple;
+    /* height: 50px - no height for the text elements, as will overlap */
+    display: inline-block;
+}
+
 
