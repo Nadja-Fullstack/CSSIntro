@@ -1,16 +1,28 @@
-h1 {
-    color: blue;
+
+h1, h2, h3 {
+    font-size: 100px;
+    background-color: aquamarine;
+    color: red;
 }
 
-.annotation {
-    font-size: 10px; 
-}
+/* Selector by tag */
 
 p {
-    font-size: 100px;
+    color: blue;
+    font-size: 50px;
 }
 
+/* Selector by id */
 
-#subsribe-btn {
+#heading {
     color: red;
-   }
+    font-size: 50px;
+}
+
+/* Selector by class */
+.green-text {
+    color: green;
+}
+.font-size-large {
+    font-size: 60px;
+}
