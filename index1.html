@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn HTML & CSS</title>
     <style>
+        h1, h2, h3 {
+            font-size: 100px;
+            background-color: aquamarine;
+            color: black;
+        }
         /* Selector by tag */
         p {
             color: blue;
@@ -15,16 +20,21 @@
             color: red;
             font-size: 50px;
         }
+       
         /* Selector by class */
         .green-text {
             color: green;
         }
-    </style>
+        .font-size-large {
+            font-size: 60px;
+        }
+</style>
 </head>
 <body>
+    <h1>This is the first capital</h1>
     <p>Lorem ipsum dolor sit amet.</p>
     <P>Test</P>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="green-text">Hic consectetur</span> maxime optio saepe consequuntur sequi?</p>
+    <p style="color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="green-text font-size-large">Hic consectetur</span> maxime optio saepe consequuntur sequi?</p>
     <article>
         <h2 id="heading">This is my best h2</h2>
         <h2 id="heading">This is my best second h2</h2>
